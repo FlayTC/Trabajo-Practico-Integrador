@@ -22,21 +22,38 @@
         </head>
 
         <header>
-            <div class="contenedorTitulo">
-                <div class="Titulo">
-                    <img class="imagenLogo" src="/imagenes/codoacodo.png" alt="logo" />
-                    Conf Bs As
+            <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="imagenes/codoacodo-min.png" alt="Codo a Codo logo">
+                        Conf Bs As
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#form-orador">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="tickets" class="nav-link btn-compra-tickets" href="comprar-tickets.html">Comprar tickets</a>
+                            </li>
+                        </ul>
                     </div>
-                    <nav class="Menu">
-                        <ul>
-                        <li id="conferencia"><a href="#">La conferencia</a></li>
-                        <li><a href="#">Los ordenadores</a></li>
-                        <li><a href="#">El lugar y la fecha</a></li>
-                        <li><a href="#">Convirtete en orador</a></li>
-                        <li id="tickets"><a href="#">Comprar tickets</a></li>
-                    </ul>
-                    </nav>
-            </div>
+                </div>
+            </nav>
         </header>
 
         <section class="descripcion">   
@@ -54,7 +71,7 @@
                 <div class="botonesPrincipales">
                     <div class="text-end">
                         <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                        <button type="button1" class="btn btn-success">Comprar tickets</button>
+                        <button type="button1" class="btn btn-success" onclick="location.href='comprarTickets.html'">Comprar tickets</button>
                     </div>
                 </div>
                 
@@ -148,31 +165,33 @@
         </div>    
     </section>
 
-        <footer>
-            <ul class="nav justify-content-center">
+    <footer id="main-footer">
+        <div class="container">
+            <ul class="nav justify-content-center justify-content-lg-between align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link active" href="https://codoacodo.com/PreguntasFrecuentes">Preguntas <br>Frecuentes</a>
+                    <a class="nav-link" href="#">Preguntas <span>frecuentes</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="https://codoacodo.com/Contactenos">Contáctanos</a>
+                    <a class="nav-link" href="#">Contáctanos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="https://codoacodo.com/Prensa">Prensa</a>
+                    <a class="nav-link" href="#">Prensa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://codoacodo.com/Conferencias">Conferencias</a>
+                    <a class="nav-link" href="#">Conferencias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://codoacodo.com/Terminosycondiciones">Términos y <br> condiciones</a>
+                    <a class="nav-link" href="#">Términos y <span>condiciones</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://codoacodo.com/Privacidad">Privacidad</a>
+                    <a class="nav-link" href="#">Privacidad</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://codoacodo.com/Estudiantes">Estudiantes</a>
+                    <a class="nav-link" href="#">Estudiantes</a>
                 </li>
-              </ul>
-        </footer>
+            </ul>
+        </div>
+    </footer>
 
     </body>
 </html>

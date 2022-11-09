@@ -3,6 +3,7 @@ ul {
 }
 
 /* Cabecera */
+.navbar-brand img { max-width: 100px; }
 
 .contenedorTitulo {
   display: flex;
@@ -23,28 +24,10 @@ color: white;
 #conferencia a {
   color: rgb(255, 255, 255);
 }
-#tickets a {
+#tickets {
 color: rgb(11, 129, 11) !important;
 }
 
-.Menu li>a{
-  text-align: left;
-  text-decoration: none;
-  color: rgb(114, 116, 119);
-  padding: 0.5rem ;
-  font-size: 1rem;
-  display: block;
-  padding-top: 1rem;
-}
-.Menu li>a:hover{
-  color: rgb(85, 85, 85);
-}
-.Menu ul li{
-  display: inline-block;
-}
-.Menu {
-  padding-right: 5rem;
-}
 .botonesPrincipales {
   padding-right: 8rem;
 }
@@ -185,19 +168,19 @@ color: rgb(11, 129, 11) !important;
 
 /* Pie de pagina */
 
-footer {
-  background: rgb(13,62,75);
-  background: linear-gradient(90deg, rgba(13,62,75,1) 0%, rgba(41,110,156,1) 100%);
-  color: black;
-}
 
-.nav-item >a {
-  color: rgb(255, 255, 255);
-  font-size: large ;
-  padding: 2rem 2rem;
-  align-items: center;
-}
-
-.nav-item >a:hover{
-  color: rgb(136, 136, 136);
-}
+  #main-footer {
+    background: linear-gradient(90deg, rgba(13,62,75,1) 0%, rgba(41,110,156,1) 100%);
+    color: #fff;
+    padding: 1.5rem;
+  }
+  
+  #main-footer .nav-link {
+    color: #fff;
+    text-align: center;
+  }
+  #main-footer .nav-link:hover { opacity: .7; }
+  
+  @media (min-width: 992px) {
+    #main-footer .nav-link span { display: block; }
+  }
